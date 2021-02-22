@@ -15,7 +15,7 @@ public class Index {
         Scanner cant = new Scanner(System.in);
        dates.mount();
        double mount = cant.nextDouble();
-        System.out.println(mount);
+
 
     }
 }
