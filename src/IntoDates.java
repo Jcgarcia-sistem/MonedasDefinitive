@@ -12,7 +12,7 @@ public class IntoDates {
     public void type(){
         System.out.println("Ingresa a que moneda deseas convertir  de MNX ");
         System.out.println("puedes seleccionar una de las siguientes opciones: ");
-        System.out.println("Dolar \n Euro \ Yen");
+        System.out.println("Dolar \n Euro \n Yen");
         System.out.println("Elije la opcion a que moneda deseas convertir ");
 
 
