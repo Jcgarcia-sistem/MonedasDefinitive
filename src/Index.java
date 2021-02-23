@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class Index {
+
     public static void main(String[] args) {
+        int mainElectionConver;
 
 
     IntoDates dates = new IntoDates();
@@ -27,11 +29,34 @@ public class Index {
         dates.mount();
         double mount = cant.nextDouble();
 /**
- * Dolar
+ * Constructores
  * */
         Dollar dolar = new Dollar(mount);
-        System.out.println("Su conversion es de " + dolar.conveDePesoa(mount) );
+        Euro eur = new Euro(mount);
 
+ /**
+  * En el siguiente bloque de codigo se encuentra  el proceso donde se elige se es de peso a otro tipo de moneda
+  * o viserversa
+  *
+  * */
+
+    switch (option){
+
+        case 1:
+
+        break;
+
+        case 2:
+            System.out.println("Oprime laopcion que necesites: ");
+            Euro.mainConvertion();
+            mainElectionConver = cant.nextInt();
+            if(mainElectionConver == 1){
+                System.out.println("El valor de la conversion de peso a euro es de : " + eur.conveDePesoa(mount));
+            }if (mainElectionConver == 2){
+            System.out.println("El valor de la conversion de euro a peso es de" + eur.converDeCoina(mount));
+        }
+
+    }
 
     }
 }
