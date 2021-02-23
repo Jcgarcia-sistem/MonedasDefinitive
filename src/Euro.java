@@ -1,24 +1,29 @@
 
 public class Euro extends ConvertionsCoints{
 
-    Euro(int option, double valueCoin) {
-        super(option, valueCoin);
-        this.valueCoin = valueCoin;
+    double pesEur = 0.040;
+    double EurPes = 25.22;
 
+    Euro(double valueCoin) {
+        super(valueCoin);
+          }
+
+    @Override
+    public double conveDePesoa(double userCoin ) {
+
+        pesEur = pesEur / userCoin;
+        return pesEur;
     }
-    public static double dePesoAMoneda(double mount){
-                double valueCoin = 0.040;
-                valueCoin = valueCoin / mount;
-                return valueCoin;
-            }
-    public  static  double deMonedaApeso(double mount){
-                double valueCoint = 25.22;
-                valueCoint = valueCoint * mount;
-                return  valueCoint;
 
-        }
+    @Override
+    public double converDeCoina(double userCoin) {
 
+        EurPes = EurPes * userCoin;
+        return  EurPes;
     }
+
+
+}
 
 
 

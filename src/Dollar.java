@@ -1,13 +1,12 @@
 public class Dollar extends  ConvertionsCoints{
 
-    Dollar(int option, double valueCoin){
-        super(option, valueCoin);
+    Dollar(double valueCoin){
+        super(valueCoin);
     }
 
     @Override
     public double conveDePesoa(double userCoin) {
-        valueCoin = 20.49;
-        valueCoin = valueCoin / userCoin;
-        return valueCoin;
+        valueCoin = 0.049;
+        return super.conveDePesoa(userCoin);
     }
 }

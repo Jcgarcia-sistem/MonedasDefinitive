@@ -14,13 +14,23 @@ public class Index {
 
         Scanner cant = new Scanner(System.in);
 
-        int option;
-        dates.option();
-        option = cant.nextInt();
+ /**
+  * Menu
+  * @param option es el valor que elige el usuario dependiendo las opciones que se muestran
+  * */
+
+        int option = 0;
+        do {
+            dates.option();
+            option = cant.nextInt();
+        }while(option > 2 );
         dates.mount();
         double mount = cant.nextDouble();
-
-
+/**
+ * Dolar
+ * */
+        Dollar dolar = new Dollar(mount);
+        System.out.println("Su conversion es de " + dolar.conveDePesoa(mount) );
 
 
     }

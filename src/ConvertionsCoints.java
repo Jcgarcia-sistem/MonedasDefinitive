@@ -1,16 +1,16 @@
-public class ConvertionsCoints {
-
-    int option;
-    double valueCoin;
+class ConvertionsCoints {
 
 
-    ConvertionsCoints(int option, double valueCoin){
-        this.option = option;
+    static double valueCoin = 0;
+
+
+    ConvertionsCoints( double valueCoin){
+
         this.valueCoin = valueCoin;
     }
 
-    public double conveDePesoa(double userCoin){
-        valueCoin = userCoin / valueCoin;
+    public  double conveDePesoa(double userCoin){
+        valueCoin = valueCoin / userCoin;
         return valueCoin;
     }
 
@@ -18,4 +18,6 @@ public class ConvertionsCoints {
         valueCoin = userCoin * valueCoin;
         return  valueCoin;
     }
+
 }
+

@@ -14,8 +14,9 @@ public class IntoDates {
         System.out.println("puedes seleccionar una de las siguientes opciones: ");
         }
     public void  option(){
-        System.out.println("Elije la opcion a que moneda deseas convertir presionando su numero ");
-        System.out.println("1   Dolar \n2   Euro \n3   Yen");
+
+            System.out.println("Elije la opcion a que moneda deseas convertir presionando su numero ");
+            System.out.println("1   Dolar \n2   Euro \n3   Yen");
 
     }
 }
