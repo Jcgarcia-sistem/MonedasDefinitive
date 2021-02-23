@@ -1,7 +1,7 @@
 public class Dollar extends  ConvertionsCoints{
 
-    Dollar(String type, double valueCoin){
-        super(type, valueCoin);
+    Dollar(int option, double valueCoin){
+        super(option, valueCoin);
     }
 
     @Override

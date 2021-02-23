@@ -13,11 +13,13 @@ public class Index {
  * */
 
         Scanner cant = new Scanner(System.in);
-        String type = cant.next();
-        System.out.println(type);
+
+        int option;
+        dates.option();
+        option = cant.nextInt();
         dates.mount();
         double mount = cant.nextDouble();
-        dates.type();
+
 
 
 

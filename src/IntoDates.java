@@ -9,15 +9,13 @@ public class IntoDates {
     public void mount(){
         System.out.println("Ingresa el monto a convertir ");
     }
-    public void type(){
+    public void  type(){
         System.out.println("Ingresa a que moneda deseas convertir  de MNX ");
         System.out.println("puedes seleccionar una de las siguientes opciones: ");
-        System.out.println("Dolar \n Euro \n Yen");
-        System.out.println("Elije la opcion a que moneda deseas convertir ");
-
-
-
-
+        }
+    public void  option(){
+        System.out.println("Elije la opcion a que moneda deseas convertir presionando su numero ");
+        System.out.println("1   Dolar \n2   Euro \n3   Yen");
 
     }
 }

@@ -1,8 +1,8 @@
 
 public class Euro extends ConvertionsCoints{
 
-    Euro(String type, double valueCoin) {
-        super(type, valueCoin);
+    Euro(int option, double valueCoin) {
+        super(option, valueCoin);
         this.valueCoin = valueCoin;
 
     }
