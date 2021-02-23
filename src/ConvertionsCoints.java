@@ -1,11 +1,11 @@
 public class ConvertionsCoints {
 
-    String type;
+    int option;
     double valueCoin;
 
 
-    ConvertionsCoints(String type, double valueCoin){
-        this.type = type;
+    ConvertionsCoints(int option, double valueCoin){
+        this.option = option;
         this.valueCoin = valueCoin;
     }
 
