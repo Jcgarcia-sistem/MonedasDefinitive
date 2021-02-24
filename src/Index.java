@@ -40,18 +40,28 @@ public class Index {
     switch (option){
 
         case 1:
+            System.out.println("Oprime la opcion que necesites");
+            Dollar.menuDolar();
+            mainElectionConver = cant.nextInt();
+            if(mainElectionConver == 1){
+                dolar.conveDePesoa(mount);
+            }if (mainElectionConver == 2){
+                dolar.converDeCoina(mount);
+        }else
+            System.out.println("Oprime una opcion valida");
 
         break;
 
         case 2:
-            System.out.println("Oprime laopcion que necesites: ");
+            System.out.println("Oprime la opcion que necesites: ");
             Euro.mainConvertion();
             mainElectionConver = cant.nextInt();
             if(mainElectionConver == 1){
                 eur.conveDePesoa(mount);
             }if (mainElectionConver == 2){
                 eur.converDeCoina(mount);
-        }
+        }else
+            System.out.println("Oprime una opcion valida");
 
     }
 

@@ -2,7 +2,7 @@
 public class Euro extends ConvertionsCoints{
 
     double pesEur = 0.040;
-    double EurPes = 25.22;
+    double EurPes = 24.81 ;
 
     Euro(double valueCoin) {
         super(valueCoin);
