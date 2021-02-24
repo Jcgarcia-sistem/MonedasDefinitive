@@ -4,9 +4,5 @@ public class Dollar extends  ConvertionsCoints{
         super(valueCoin);
     }
 
-    @Override
-    public double conveDePesoa(double userCoin) {
-        valueCoin = 0.049;
-        return super.conveDePesoa(userCoin);
-    }
+
 }

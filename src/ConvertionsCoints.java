@@ -9,14 +9,16 @@ class ConvertionsCoints {
         this.valueCoin = valueCoin;
     }
 
-    public  double conveDePesoa(double userCoin){
-        valueCoin = valueCoin / userCoin;
-        return valueCoin;
+    public   void conveDePesoa(double userCoin){
+        valueCoin = valueCoin  * userCoin;
+        System.out.println(" El valor convertido a EURO es : "+ (float) + valueCoin + " Euross");
+
     }
 
-    public double converDeCoina(double userCoin){
-        valueCoin = userCoin * valueCoin;
-        return  valueCoin;
+    public  void converDeCoina(double userCoin){
+        valueCoin = userCoin / valueCoin;
+        System.out.println(" El valor convertido a Peso es : "+ (float) + valueCoin+ " Pesos");
+
     }
 
 }

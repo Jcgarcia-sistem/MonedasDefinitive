@@ -5,9 +5,6 @@ public class Index {
     public static void main(String[] args) {
         int mainElectionConver;
 
-
-    IntoDates dates = new IntoDates();
-
 /**
  * Ingreso de datos
  * @param mount es  la cantidad a convertir
@@ -23,10 +20,10 @@ public class Index {
 
         int option = 0;
         do {
-            dates.option();
+            IntoDates.option();
             option = cant.nextInt();
         }while(option > 2 );
-        dates.mount();
+        IntoDates.mount();
         double mount = cant.nextDouble();
 /**
  * Constructores
@@ -51,9 +48,9 @@ public class Index {
             Euro.mainConvertion();
             mainElectionConver = cant.nextInt();
             if(mainElectionConver == 1){
-                System.out.println("El valor de la conversion de peso a euro es de : " + eur.conveDePesoa(mount));
+                eur.conveDePesoa(mount);
             }if (mainElectionConver == 2){
-            System.out.println("El valor de la conversion de euro a peso es de" + eur.converDeCoina(mount));
+                eur.converDeCoina(mount);
         }
 
     }

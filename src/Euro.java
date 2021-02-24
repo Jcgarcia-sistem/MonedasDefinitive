@@ -9,15 +9,15 @@ public class Euro extends ConvertionsCoints{
           }
 
     @Override
-    public double conveDePesoa(double userCoin) {
+    public void conveDePesoa(double userCoin) {
         valueCoin = pesEur;
-        return super.conveDePesoa(userCoin);
+        super.conveDePesoa(userCoin);
     }
 
     @Override
-    public double converDeCoina(double userCoin) {
+    public void converDeCoina(double userCoin) {
         valueCoin = EurPes;
-        return super.converDeCoina(userCoin);
+        super.converDeCoina(userCoin);
     }
 
     public static  void mainConvertion(){
