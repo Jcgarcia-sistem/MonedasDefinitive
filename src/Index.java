@@ -1,3 +1,5 @@
+import static UIMain.IntoDates.*;
+
 import java.util.Scanner;
 
 public class Index {
@@ -20,10 +22,10 @@ public class Index {
 
         int option = 0;
         do {
-            IntoDates.option();
+            option();
             option = cant.nextInt();
         }while(option > 2 );
-        IntoDates.mount();
+            mount();
         double mount = cant.nextDouble();
 /**
  * Constructores
