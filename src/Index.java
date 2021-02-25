@@ -40,6 +40,7 @@ public class Index {
     switch (option){
 
         case 1:
+            do {
             System.out.println("Oprime la opcion que necesites");
             Dollar.menuDolar();
             mainElectionConver = cant.nextInt();
@@ -49,10 +50,12 @@ public class Index {
                 dolar.converDeCoina(mount);
         }else
             System.out.println("Oprime una opcion valida");
+            }while (mainElectionConver >2);
 
         break;
 
         case 2:
+            do{
             System.out.println("Oprime la opcion que necesites: ");
             Euro.mainConvertion();
             mainElectionConver = cant.nextInt();
@@ -62,7 +65,7 @@ public class Index {
                 eur.converDeCoina(mount);
         }else
             System.out.println("Oprime una opcion valida");
-
+            }while (mainElectionConver >2);
     }
 
     }

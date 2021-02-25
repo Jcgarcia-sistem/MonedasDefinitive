@@ -9,13 +9,13 @@ public class Dollar extends  ConvertionsCoints{
 
     @Override
     public void conveDePesoa(double userCoin) {
-        valueCoin = pesoDolar;
+        valueCoin = dolarPeso ;
         super.conveDePesoa(userCoin);
     }
 
     @Override
     public void converDeCoina(double userCoin) {
-        valueCoin = dolarPeso;
+        valueCoin = pesoDolar;
         super.converDeCoina(userCoin);
     }
 

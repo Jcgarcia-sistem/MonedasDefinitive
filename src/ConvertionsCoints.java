@@ -11,7 +11,7 @@ class ConvertionsCoints {
 
     public   void conveDePesoa(double userCoin){
         valueCoin = valueCoin  * userCoin;
-        System.out.println(" El valor convertido a EURO es : "+ (float) + valueCoin + " Euross");
+        System.out.println(" El valor convertido es : "+ (float) + valueCoin);
 
     }
 
