@@ -1,68 +1,87 @@
-import static UIMain.IntoDates.*;
-
+import UIMain.TestMain;
+import static UIMain.TestMain.*;
 import java.util.Scanner;
-
 public class Index {
 
+   static int mainElec;
+   static double mount;
+
     public static void main(String[] args) {
-        int mainElectionConver;
 
-/**
- * Ingreso de datos
- * @param mount es  la cantidad a convertir
- * @param type es el tipo de moneda a convertir
- * */
-
-        Scanner cant = new Scanner(System.in);
-
- /**
-  * Menu
-  * @param option es el valor que elige el usuario dependiendo las opciones que se muestran
-  * */
-
-
-/**
- * Constructores
- * */
+        Scanner mo = new Scanner(System.in);
         Dollar dolar = new Dollar(mount);
-        Euro eur = new Euro(mount);
+        Euro euro = new Euro(mount);
 
- /**
-  * En el siguiente bloque de codigo se encuentra  el proceso donde se elige se es de peso a otro tipo de moneda
-  * o viserversa
-  *
-  * */
 
-    switch (option){
+        Scanner consol = new Scanner(System.in);
+        TestMain.main();
+        int ele = consol.nextInt();
+        System.out.println(ele);
 
-        case 1:
-            do {
-            System.out.println("Oprime la opcion que necesites");
-            Dollar.menuDolar();
-            mainElectionConver = cant.nextInt();
-            if(mainElectionConver == 1){
-                dolar.conveDePesoa(mount);
-            }if (mainElectionConver == 2){
-                dolar.converDeCoina(mount);
-        }else
-            System.out.println("Oprime una opcion valida");
-            }while (mainElectionConver >2);
 
-        break;
+        switch(ele){
+                case 1:
+                    do {
 
-        case 2:
-            do{
-            System.out.println("Oprime la opcion que necesites: ");
-            Euro.mainConvertion();
-            mainElectionConver = cant.nextInt();
-            if(mainElectionConver == 1){
-                eur.conveDePesoa(mount);
-            }if (mainElectionConver == 2){
-                eur.converDeCoina(mount);
-        }else
-            System.out.println("Oprime una opcion valida");
-            }while (mainElectionConver >2);
-    }
+                       Dollar.menuDolar();
+                        mainElec = consol.nextInt();
+                    }while(mainElec > 2 && ele != 0);
 
-    }
-}
+                       if(mainElec != 0) {
+                           System.out.println("Ingresa el monto ");
+                            mount = mo.nextDouble();
+                       }
+                       switch (mainElec) {
+                           case 1:
+                               dolar.conveDePesoa(mount);
+                               break;
+                           case 2:
+                               dolar.converDeCoina(mount);
+                               break;
+                           case 0:
+                               TestMain.main();
+                               break;
+                           default:
+                               System.out.println("Ingresa una opcion valida ");
+                               break;
+                       }
+                       break;
+
+                case 2:
+                    do {
+                        System.out.println(" 1 Convertir de Peso a Euro");
+                        System.out.println(" 2 Convertir de Euro a Peso");
+                        System.out.println(" 0 Regresar al menu");
+                        mainElec = consol.nextInt();
+                    }while(mainElec > 2 && ele != 0);
+
+                    if(mainElec != 0) {
+                        System.out.println("Ingresa el monto ");
+                        mount = mo.nextDouble();
+
+                    }
+                    switch (mainElec) {
+                        case 1:
+                            euro.conveDePesoa(mount);
+                            break;
+                        case 2:
+                            euro.converDeCoina(mount);
+                            break;
+                        case 0:
+                            TestMain.main();
+                            break;
+                        default:
+                            System.out.println("Ingresa una opcion valida ");
+                            break;
+                    }
+                break;
+            default:
+                System.out.println("Ingresa un valor corrrecto");
+                break;
+
+
+
+            }
+
+
+        }}

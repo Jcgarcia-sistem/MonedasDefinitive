@@ -1,4 +1,5 @@
-class ConvertionsCoints {
+
+public class ConvertionsCoints {
 
 
     static double valueCoin = 0;
@@ -9,15 +10,15 @@ class ConvertionsCoints {
         this.valueCoin = valueCoin;
     }
 
-    public   void conveDePesoa(double userCoin){
-        valueCoin = valueCoin  * userCoin;
+    public    void conveDePesoa(double mount){
+        valueCoin = valueCoin  * mount;
         System.out.println(" El valor convertido es : "+ (float) + valueCoin);
 
     }
 
-    public  void converDeCoina(double userCoin){
-        valueCoin = userCoin / valueCoin;
-        System.out.println(" El valor convertido a Peso es : "+ (float) + valueCoin+ " Pesos");
+    public  void converDeCoina(double mount){
+        valueCoin = mount / valueCoin;
+        System.out.println(" El valor convertido a Peso es : "+ valueCoin+ " Pesos");
 
     }
 

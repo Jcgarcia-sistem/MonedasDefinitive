@@ -1,3 +1,4 @@
+
 public class Dollar extends  ConvertionsCoints{
 
     double pesoDolar =  0.049;
@@ -8,15 +9,17 @@ public class Dollar extends  ConvertionsCoints{
     }
 
     @Override
-    public void conveDePesoa(double userCoin) {
+    public void conveDePesoa(double mount) {
         valueCoin = dolarPeso ;
-        super.conveDePesoa(userCoin);
+        super.conveDePesoa(mount);
     }
 
+
+
     @Override
-    public void converDeCoina(double userCoin) {
+    public void converDeCoina(double mount) {
         valueCoin = pesoDolar;
-        super.converDeCoina(userCoin);
+        super.converDeCoina(mount);
     }
 
     public static  void menuDolar(){
