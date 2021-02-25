@@ -20,13 +20,7 @@ public class Index {
   * @param option es el valor que elige el usuario dependiendo las opciones que se muestran
   * */
 
-        int option = 0;
-        do {
-            option();
-            option = cant.nextInt();
-        }while(option > 2 );
-            mount();
-        double mount = cant.nextDouble();
+
 /**
  * Constructores
  * */
